@@ -2,18 +2,34 @@
   "name": "youtube-api-hooks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server",
+    "build": "webpack -p --env.production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VladimirMerk/youtube-api-hooks.git"
   },
-  "author": "",
+  "author": "VMerk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/VladimirMerk/youtube-api-hooks/issues"
   },
-  "homepage": "https://github.com/VladimirMerk/youtube-api-hooks#readme"
+  "homepage": "https://github.com/VladimirMerk/youtube-api-hooks#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "youtube-search": "^1.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "dotenv-webpack": "^1.8.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
